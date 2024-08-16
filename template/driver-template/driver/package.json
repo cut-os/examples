@@ -1,0 +1,19 @@
+{
+  "name": "driver-template",
+  "version": "1.0.0",
+  "description": "The template for the Driver that communicates with hardware",
+  "main": "test/main.js",
+  "scripts": {
+    "start": "node .",
+    "build": "gulp build"
+  },
+  "author": "SipTimes",
+  "devDependencies": {
+    "@cutos/core": "^3.2.4",
+    "aedes": "^0.51.0",
+    "aedes-server-factory": "^0.2.1",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.1.0"
+  }
+}

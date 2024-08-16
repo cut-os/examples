@@ -1,0 +1,8 @@
+{
+  "name": "lwa-template",
+  "version": "3.2.1",
+  "description": "The template of LWA(local web application) which is working on CUTOS",
+  "params": {
+    "title": "lwa template"
+  }
+}

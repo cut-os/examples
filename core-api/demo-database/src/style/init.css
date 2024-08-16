@@ -1,0 +1,175 @@
+html, body {
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FF5722;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 30px;
+    z-index: 1;
+}
+.net-status {
+    width: 40px;
+    height: 40px;
+    background-image: url('../image/net-off.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 30px;
+}
+
+.net-status.on {
+    background-image: url('../image/net-on.png');
+}
+
+.stage {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.params {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+}
+
+.modules {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 15px auto;
+}
+
+.modules .result-section {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #333;
+    background-color: #fff;
+    flex: 1;
+}
+
+.code-wrap {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.api-name {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.modal-wrap {
+    width: 60vw;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.operations {
+    width: 90%;
+    margin: 15px auto;
+}
+
+.row-wrap {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.operations .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.operations .result-section {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    flex: 1;
+    margin-left: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.api-row {
+    display: flex;
+}
+
+.btn {
+    width: 120px;
+    transition: .1s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ddd;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.btn:active {
+    opacity: 80%;
+}
+
+.btn.primary {
+    color: #fff;
+    background-color: #409eff;
+}
+
+.form-control {
+    width: 120px;
+    margin-right: 20px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+.form-control:focus {
+    border: 1px solid #1fa012;
+}

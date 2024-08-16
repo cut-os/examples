@@ -1,0 +1,11 @@
+{
+  "name": "demo-nfc",
+  "version": "3.2.0",
+  "description": "demo nfc with CUTOS driver",
+  "params": {
+    "title": "demo-nfc"
+  },
+  "drvDependencies": {
+    "device-nfc": "3.2.0"
+  }
+}

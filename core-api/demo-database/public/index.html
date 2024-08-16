@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+<div class="header">
+  <div class="params" id="params-title"></div>
+  <div class="net-status" id="netStatus"></div>
+</div>
+<div class="stage">
+  <div class="modules">
+    <div class="code-wrap">
+      <div class="api-name">LWA Info</div>
+      <div class="result-section">
+        <div>name: <span id="lwa-name"></span></div>
+        <div>version: <span id="lwa-version"></span></div>
+        <div>description: <span id="lwa-description"></span></div>
+      </div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">coreAPI.getDatabase()</div>
+      <div class="result-section" id="database-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">db.createTable()</div>
+      <div class="result-section" id="table-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.insert()</div>
+      <div class="result-section" id="insert-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.insert()</div>
+      <div class="result-section" id="insert2-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.update()</div>
+      <div class="result-section" id="update-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.query()</div>
+      <div class="result-section" id="query-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.sync()</div>
+      <div class="result-section" id="sync-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.queryUnsynced()</div>
+      <div class="result-section" id="queryUnsynced-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.queryByTid()</div>
+      <div class="result-section" id="queryByTid-text"></div>
+    </div>
+    <div class="code-wrap">
+      <div class="api-name">table.queryAll()</div>
+      <div class="result-section" id="queryAll-text"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

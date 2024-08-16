@@ -1,0 +1,14 @@
+{
+    "name": "demo-core-api",
+    "version": "3.2.0",
+    "description": "CUTOS core API demo",
+    "params": {
+        "title": "demo core api"
+    },
+    "paramsDescription": {
+        "title": {
+            "name": "Title",
+            "visible": "true"
+        }
+    }
+}

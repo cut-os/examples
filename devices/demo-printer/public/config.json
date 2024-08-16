@@ -1,0 +1,17 @@
+{
+  "name": "demo-printer",
+  "version": "3.2.1",
+  "description": "device printer work with print demo",
+  "params": {
+    "title": "demo device printer"
+  },
+  "paramsDescription": {
+    "title": {
+      "name": "打印机",
+      "visible": "true"
+    }
+  },
+  "drvDependencies": {
+    "device-printer": "3.2.0"
+  }
+}

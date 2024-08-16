@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="js/config.js"></script>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div class="header">
+    <div class="params" id="params-text"></div>
+    <div class="net-status" id="netStatus"></div>
+</div>
+<div class="stage">
+    <div class="left-panel">
+        <div class="code-wrap">
+            <div class="api-name">Sign Info</div>
+            <div class="result-section">
+                <div class="sub-label">gateway url: <span id="lwa-gateway-url"></span></div>
+                <div class="sub-label">ID: <span id="lwa-id"></span></div>
+                <div class="sub-label">名称: <span id="lwa-device"></span></div>
+                <div class="sub-label">token: <span id="lwa-token"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="right-panel">
+        <div class="title">消息列表</div>
+        <div class="msg-panel">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

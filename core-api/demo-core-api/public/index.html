@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+<div class="header">
+  <div class="params" id="params-title"></div>
+  <div class="net-status" id="netStatus"></div>
+</div>
+<div class="stage">
+  <div class="modules">
+    <div class="code-wrap">
+      <div class="api-name">coreAPI.getPlatform()</div>
+      <div class="result-section" id="platform-text"></div>
+    </div>
+
+    <div class="code-wrap">
+      <div class="api-name">coreAPI.getConfig()</div>
+      <div class="result-section" id="config-text"></div>
+    </div>
+
+    <div class="code-wrap">
+      <div class="api-name">coreAPI.getBoxInfo()</div>
+      <div class="result-section" id="info-text"></div>
+    </div>
+
+    <div class="code-wrap" style="min-height: 300px">
+      <div class="api-name">coreAPI.getDeviceInfo()</div>
+      <div class="result-section" id="device-text"></div>
+    </div>
+  </div>
+  <div class="operations">
+    <div class="row-wrap">
+      <div class="api-name">coreAPI.getLogger().info(remark, content)</div>
+      <div class="api-row">
+        <div class="btn primary" id="successBtn">成功</div>
+        <div class="result-section" id="successRet"></div>
+      </div>
+    </div>
+    <div class="row-wrap">
+      <div class="api-name">coreAPI.getLogger().error(remark, content)</div>
+      <div class="api-row">
+        <div class="btn" id="errorBtn">失败</div>
+        <div class="result-section" id="errorRet"></div>
+      </div>
+    </div>
+    <div class="row-wrap">
+      <div class="api-name">coreAPI.setVolume(VALUE)</div>
+      <div class="api-row">
+        <div class="btn primary" id="setVolumeBtn">设置音量</div>
+        <div class="result-section">
+          <input id="form-row-volume" class="form-control" type="number" value="20" min=0 max=100 placeholder="0 - 100">
+          <span id="setVolumeRet"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

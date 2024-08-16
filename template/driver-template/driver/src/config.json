@@ -1,0 +1,16 @@
+{
+  "name": "driver-template",
+  "description": "driver template",
+  "version": "1.0.0",
+  "type": "driver-template",
+  "platform": "win32_x64",
+  "manufacturer": "SipTimes",
+  "model": "template-320",
+  "opts": {
+    "path": "",
+    "stopBit": 1,
+    "baudRate": 9600,
+    "dataBit": 8,
+    "interval": 500
+  }
+}

@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FF5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    z-index: 1;
+}
+.params {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+}
+.net-status {
+    width: 40px;
+    height: 40px;
+    background-image: url('../image/net-off.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 30px;
+}
+.net-status.on {
+    background-image: url('../image/net-on.png');
+}
+
+.stage {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-panel {
+    flex: 1;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.right-panel {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.code-wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+.api-name {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.result-section {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #333;
+    background-color: #fff;
+    flex: 1;
+}
+.tip {
+    font-size: 16px;
+    margin-top: 30px;
+}
+.row {
+    line-height: 30px;
+    width: 100%;
+    display: flex;
+}
+.label {
+    font-weight: 700;
+    text-align: right;
+    margin-right: 10px;
+    width: 200px;
+}
+.label+span {
+    flex: 1;
+    text-align: left;
+}
+.sub-label {
+    color: #409eff;
+    font-size: 18px;
+    line-height: 2;
+}
+.sub-label > span {
+    color: #333;
+}
+.right-panel .title {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+.right-panel .msg-panel {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.msg-row {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.msg-row.request {
+    background-color: #d2ffcf;
+}
+.msg-row.response {
+    background-color: #ced0ff;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

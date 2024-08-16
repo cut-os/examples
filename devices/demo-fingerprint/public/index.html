@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class="toast" id="toast">
+    <span class="content" id="toast-text"></span>
+</div>
+<div class="header">
+    <div class="params" id="params-title"></div>
+    <div class="net-status" id="netStatus"></div>
+</div>
+<div class="stage">
+    <div class="modules">
+        <div class="code-wrap">
+            <div class="api-name">LWA Info</div>
+            <div class="result-section">
+                <div>name: <span id="lwa-name"></span></div>
+                <div>version: <span id="lwa-version"></span></div>
+                <div>description: <span id="lwa-description"></span></div>
+            </div>
+        </div>
+        <div class="code-wrap">
+            <div class="api-name">Identify Result</div>
+            <div class="result-section">
+                <span id="identification"></span>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap">
+        <div class="btn-wrap">
+            <span class="switch-text" id="mode-text">识别模式</span>
+            <label class="switch">
+                <input type="checkbox" id="mode-check">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="btn-wrap" id="operations">
+            <div class="btn-wrap">
+                <label>
+                    <span class="user-id-text">用户ID</span>
+                    <input class="user-id" id="user-id"/>
+                </label>
+            </div>
+            <button type="button" class="btn primary" id="add-user"><span>添加用户</span></button>
+            <button type="button" class="btn primary" id="delete-user"><span>删除用户</span></button>
+            <button type="button" class="btn primary" id="delete-all"><span>删除全部</span></button>
+        </div>
+    </div>
+</div>
+<div class="mask" id="mask">
+    <div class="modal-wrap">
+        <div class="close" id="close"><div>X</div></div>
+        <div class="fp">
+            <img id="status" src="fp-a.png" alt="missing"/>
+        </div>
+        <div>
+            <span id="tip">请点击开始录入指纹</span>
+        </div>
+        <div class="operation">
+            <button id="operation" type="button" class="btn primary" ><span>开始</span></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

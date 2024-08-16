@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div class="header">
+    <div class="params" id="params-text"></div>
+    <div class="net-status" id="netStatus"></div>
+</div>
+<div class="stage">
+    <div class="modules">
+        <div class="code-wrap">
+            <div class="api-name">LWA Info</div>
+            <div class="result-section">
+                <div>
+                   <span id="lwa-info-text"></span>
+                </div>
+            </div>
+        </div>
+        <div class="code-wrap">
+            <div class="api-name">ID Card Reader Info</div>
+            <div class="result-section" id="info-text"></div>
+        </div>
+    </div>
+    <div class="tip">将身份证放置于刷卡区域</div>
+</div>
+<div class="mask" id="mask">
+    <div class="modal-wrap">
+        <div style="flex-direction: row; display: flex;justify-content: space-around; flex:1; width: 100%">
+            <div style="flex-direction: column; flex: 1">
+                <div class="row"><span class="label">身份证号: </span><span id="text-code"></span></div>
+                <div class="row"><span class="label">姓名: </span><span id="text-name"></span></div>
+                <div class="row"><span class="label">性别: </span><span id="text-sex"></span></div>
+                <div class="row"><span class="label">出生: </span><span id="text-birthday"></span></div>
+                <div class="row"><span class="label">住址: </span><span id="text-address"></span></div>
+                <div class="row"><span class="label">民族: </span><span id="text-nation"></span></div>
+                <div class="row"><span class="label">签发机关: </span><span id="text-department"></span></div>
+                <div class="row"><span class="label">有效期限: </span><span><span id="text-startDate"></span> - <span
+                        id="text-endDate"></span></span></div>
+                <div class="row"><span class="label"></span><span id="text-certType"></span></div>
+            </div>
+            <div>
+                <img id="avatar" src="" alt="missing" class="avatar"/>
+            </div>
+        </div>
+        <div id="count_down_text" class="count-down-tip">3 秒后关闭窗口</div>
+    </div>
+</div>
+<!-- built files will be auto injected -->
+</body>
+</html>
