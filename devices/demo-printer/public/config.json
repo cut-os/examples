@@ -1,6 +1,6 @@
 {
   "name": "demo-printer",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "device printer work with print demo",
   "params": {
     "title": "demo device printer"
@@ -12,6 +12,6 @@
     }
   },
   "drvDependencies": {
-    "device-printer": "3.2.0"
+    "device-printer": "3.2.1"
   }
 }

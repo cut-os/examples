@@ -63,6 +63,7 @@ html, body {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 4px;
+    overflow: auto;
 }
 
 .api-name {
@@ -74,7 +75,7 @@ html, body {
 .result-section {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: auto;
     padding: 15px;
     font-size: 12px;
     border-radius: 10px;
