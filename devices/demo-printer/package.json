@@ -1,6 +1,6 @@
 {
   "name": "demo-printer",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "SipTimes",
   "dependencies": {
     "@cutos/core": "^3.2.6",
-    "@cutos/devices": "^3.2.5"
+    "@cutos/devices": "^3.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

@@ -28,7 +28,7 @@ for (let key of lwaInfo) {
     document.querySelector('#lwa-' + key).innerText = config[key]
 }
 renderText('params-title', config.params.title)
-
+let $receipt = document.querySelector('#isReceipt')
 function demoDevicePrinter() {
 
     CoreAPI.getNotification().register(({event, msg}) => {
@@ -70,7 +70,7 @@ function demoDevicePrinter() {
     document.querySelector('#print_test_page').addEventListener('click', () => {
         if (devPrinter) {
             let printer = document.querySelector('#printer-name').value || null
-            devPrinter.printTestPage(printer); // default printer
+            devPrinter.printTestPage(printer, { portable: $receipt.checked }); // default printer
         }
     })
 
@@ -78,7 +78,7 @@ function demoDevicePrinter() {
         if (devPrinter) {
             let pdfUrl = 'https://oss.cut-os.com/resources/developer/examples/printer/print-sample.pdf';
             let printer = document.querySelector('#printer-name').value || null
-            devPrinter.printPdfUrl(pdfUrl, printer);
+            devPrinter.printPdfUrl(pdfUrl, printer, { portable: $receipt.checked });
         }
     });
 }
