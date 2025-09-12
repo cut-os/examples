@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+        #cam {}
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div class="header">
+        <div class="title">CUTOS</div>
+    </div>
+    <div class="panel">
+        <div class="loader">
+            <img src="./loading.gif" alt="">
+            <div class="text">加载中</div>
+        </div>
+        <div class="alert">
+            <div class="text gw-result"></div>
+            <div class="btn btn-danger" id="unregister">注销</div>
+        </div>
+        <div class="main-card">
+            <div class="display-stage">
+                <div class="video-image-wrap">
+                    <div class="video-wrap">
+                        <video class="cam-video" autoplay muted playsinline id="cam"></video>
+                    </div>
+                    <div class="image-wrap">
+                        <img class="cam-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <div type="button" class="btn btn-primary" id="search"><span>搜索</span></div>
+                <div type="button" class="btn btn-primary" id="register"><span>注册</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

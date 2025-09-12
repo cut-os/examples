@@ -1,11 +1,8 @@
 /**
- * This demo mainly demonstrates the following APIs of DevicePrinter
- * readDeviceInfo
- * printTestPage
- * printPdfUrl
+ * This demo mainly demonstrates the following APIs of DeviceReceiptPrinter
  */
 import {CoreAPI} from '@cutos/core';
-import {DevicePrinter} from '@cutos/devices';
+import {DeviceReceiptPrinter} from '@cutos/device-receipt-printer';
 import {config} from './js/config.js';
 import {renderNet, renderText} from './js/util'
 import './style/init.css'
@@ -13,7 +10,7 @@ import './style/init.css'
 let devPrinter = null
 // host is CUTOS IP address the default value is localhost,
 // which can be modified to the target address during development，eg：192.168.1.11.
-const host = null;
+const host = '192.168.1.110';
 CoreAPI.init(host, (result, error) => {
     if (error) {
         console.log(error)
@@ -28,7 +25,6 @@ for (let key of lwaInfo) {
     document.querySelector('#lwa-' + key).innerText = config[key]
 }
 renderText('params-title', config.params.title)
-let $receipt = document.querySelector('#isReceipt')
 function demoDevicePrinter() {
 
     CoreAPI.getNotification().register(({event, msg}) => {
@@ -39,17 +35,13 @@ function demoDevicePrinter() {
         }
     })
 
-    devPrinter = new DevicePrinter();
+    devPrinter = new DeviceReceiptPrinter();
     devPrinter.init((result, error) => {
         if (error) {
             console.log(error)
             return;
         }
         console.log(result)
-
-        devPrinter.readDeviceInfo(data => {
-            renderText('info', data)
-        });
     });
 
     devPrinter.onData(function (data) {
@@ -65,22 +57,25 @@ function demoDevicePrinter() {
                 console.log("Printer data: " + JSON.stringify(data));
         }
     });
-
-
+    
+    const print = () => {
+        devPrinter.setAlign('center')
+        devPrinter.printQrcode('hello cutos')
+        devPrinter.feed(1)
+        devPrinter.feed(1)
+        devPrinter.print('脉搏：60 次/分')
+        devPrinter.print('舒张压：60 mmHg')
+        devPrinter.print('收缩压：101 mmHg')
+        devPrinter.print('血压：')
+        devPrinter.print('测量结果')
+        devPrinter.feed(10)
+    }
     document.querySelector('#print_test_page').addEventListener('click', () => {
         if (devPrinter) {
-            let printer = document.querySelector('#printer-name').value || null
-            devPrinter.printTestPage(printer, { receipt: $receipt.checked }); // default printer
+            print(); // default printer
         }
     })
-
-    document.querySelector('#print_pdf_url').addEventListener('click', () => {
-        if (devPrinter) {
-            let pdfUrl = 'https://oss.cut-os.com/resources/developer/examples/printer/print-sample.pdf';
-            let printer = document.querySelector('#printer-name').value || null
-            devPrinter.printPdfUrl(pdfUrl, printer, { receipt: $receipt.checked });
-        }
-    });
+    
 }
 
 

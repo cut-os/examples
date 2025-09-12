@@ -1,0 +1,17 @@
+{
+  "name": "demo-receipt-printer",
+  "version": "3.4.0",
+  "description": "device receipt printer work with print demo",
+  "params": {
+    "title": "demo device receipt printer"
+  },
+  "paramsDescription": {
+    "title": {
+      "name": "打印机",
+      "visible": "true"
+    }
+  },
+  "drvDependencies": {
+    "device-receipt-printer-r17": "1.0.0"
+  }
+}

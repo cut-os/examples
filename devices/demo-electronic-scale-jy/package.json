@@ -1,0 +1,31 @@
+{
+  "name": "demo-electronic-scale",
+  "private": true,
+  "version": "3.4.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --force",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@cutos/core": "^3.4.0",
+    "@cutos/device-electronic-scale": "^3.4.0",
+    "@cutos/device-tspl-printer": "^3.4.1",
+    "canvas-gauges": "^2.1.7",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.20",
+    "gulp": "^5.0.0",
+    "gulp-zip": "^6.0.0",
+    "postcss": "^8.4.40",
+    "postcss-import": "^16.1.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.7",
+    "unplugin-auto-import": "^0.18.0",
+    "vite": "^5.3.4"
+  }
+}

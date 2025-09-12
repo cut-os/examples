@@ -20,24 +20,23 @@
         <div>version: <span id="lwa-version"></span></div>
         <div>description: <span id="lwa-description"></span></div>
       </div>
-      <div class="api-name">Print parameters</div>
-      <div class="result-section">
-        <div>printer name: <input type="text" class="form-control" id="printer-name" placeholder="input printer name"></div>
-        <div><label for="isReceipt">小票打印机</label><input type="checkbox" id="isReceipt"></div>
-      </div>
-      <div class="api-name">Print result</div>
-      <div class="result-section">
-        <span id="result"></span>
-      </div>
+      
     </div>
     <div class="code-wrap">
       <div class="api-name">Printer Info</div>
-      <div class="result-section" id="info"></div>
+      <div class="printer-content" id="info">
+          <p>二维码</p>
+          <p> 脉搏：60 次/分</p>
+          <p> 舒张压：60 mmHg</p>
+          <p> 收缩压：101 mmHg</p>
+          <p> 血压：</p>
+          <p> 测量结果：</p>
+      </div>
+      
     </div>
   </div>
   <div class="btn-wrap">
-    <button type="button" class="btn primary" id="print_test_page"><span>打印测试页</span></button>
-    <button type="button" class="btn" id="print_pdf_url"><span>打印 PDF URL</span></button>
+    <button type="button" class="btn primary" id="print_test_page"><span>打印</span></button>
   </div>
 </div>
 </body>

@@ -1,7 +1,7 @@
 {
-  "name": "demo-printer",
-  "version": "3.2.3",
-  "description": "",
+  "name": "demo-id-card-reader",
+  "version": "3.4.0",
+  "description": "demonstrating the usage of id card reader",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
@@ -9,8 +9,13 @@
   },
   "author": "SipTimes",
   "dependencies": {
-    "@cutos/core": "^3.2.6",
-    "@cutos/devices": "^3.2.6"
+    "@cutos/core": "^3.4.0",
+    "@cutos/devices": "^3.4.0",
+    "axios": "^1.5.1",
+    "es6-promisify": "^7.0.0",
+    "mqtt": "4.2.7",
+    "qs": "^6.11.2",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

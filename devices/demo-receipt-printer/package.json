@@ -1,6 +1,6 @@
 {
-  "name": "demo-printer",
-  "version": "3.2.3",
+  "name": "demo-receipt-printer",
+  "version": "3.4.0",
   "description": "",
   "private": true,
   "scripts": {
@@ -9,8 +9,9 @@
   },
   "author": "SipTimes",
   "dependencies": {
-    "@cutos/core": "^3.2.6",
-    "@cutos/devices": "^3.2.6"
+    "@cutos/core": "^3.4.0",
+    "@cutos/device-receipt-printer": "^3.4.0",
+    "@cutos/devices": "^3.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

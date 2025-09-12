@@ -25,12 +25,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'demo-printer',
+            title: 'demo-id-card-reader-hs',
             template: path.join(__dirname, './public/index.html'),
         }),
-        new MiniCssExtractPlugin({
-            filename: 'style/init.css',
-        }),
+        new MiniCssExtractPlugin(),
         new CopyPlugin({
             patterns: [{
                 from: path.join(__dirname, './public/config.json'),

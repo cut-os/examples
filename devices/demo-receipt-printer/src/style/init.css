@@ -146,3 +146,15 @@ html, body {
 .form-control:focus {
     border: 1px solid #1fa012;
 }
+.printer-content{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: auto;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #333;
+    background-color: #fff;
+    flex: 1;
+    border: #cccccc;
+}

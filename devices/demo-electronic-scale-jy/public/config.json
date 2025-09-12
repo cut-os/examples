@@ -1,0 +1,16 @@
+{
+  "name": "demo-electronic-scale-jy",
+  "version": "3.4.2",
+  "description": "Demo of CUTOS LWA's Best Practices",
+  "params": {
+    "title": "Demo Electronic Scale",
+    "scale": "/dev/ttyS02",
+    "printer": "/dev/ttyS01",
+    "printerBaudRate": 9600,
+    "mode": ""
+  },
+  "drvDependencies": {
+    "device-electronic-scale-jy": "1.0.0",
+    "device-tspl-printer": "3.4.0"
+  }
+}
