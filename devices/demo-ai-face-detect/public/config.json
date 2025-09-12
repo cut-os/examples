@@ -1,0 +1,12 @@
+{
+  "name": "demo-ai-face-detect",
+  "version": "1.0.1",
+  "description": "demo face detect with CUTOS gateway",
+  "params": {
+    "title": "demo-ai-face-detect",
+    "host": "",
+    "gwUrl": ""
+  },
+  "drvDependencies": {
+  }
+}

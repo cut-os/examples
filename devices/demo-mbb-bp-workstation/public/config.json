@@ -1,0 +1,17 @@
+{
+  "name": "demo-mbb-bp-workstation",
+  "version": "1.0.1",
+  "description": "CUTOS + VITE",
+  "params": {
+    "title": "CUTOS",
+    "host": "",
+    "mode": "",
+    "printerPath": "/dev/usb/lp0",
+    "BpPath": "/dev/ttyS3"
+  },
+  "drvDependencies": {
+    "device-bp-monitor-mbb": "1.0.0",
+    "device-id-card-reader-st": "1.0.0",
+    "device-receipt-printer-r17": "1.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "demo-id-card-reader",
+  "version": "3.4.0",
+  "language": "zh",
+  "description": "demonstrating the usage of id card reader",
+  "params": {
+    "title": "demo id card reader",
+    "mode": "mock"
+  },
+  "paramsDescription": {
+    "title": {
+      "name": "标题",
+      "visible": "true"
+    }
+  },
+  "drvDependencies": {
+    "device-id-card-reader-st": "1.0.0"
+  }
+}

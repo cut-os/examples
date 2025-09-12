@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+        #cam {}
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div class="header">
+        <div class="title">CUTOS</div>
+    </div>
+    <div class="panel">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="text">加载中</div>
+            </div>
+        </div>
+        <div class="main-card">
+            <div>
+                <video class="cam-video" autoplay muted playsinline id="cam"></video>
+                <img class="cam-image" src="" alt="">
+            </div>
+            <div type="button" class="btn btn-primary" id="start"><span>开始识别</span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
